@@ -9,8 +9,8 @@
     <title>ブログサイトの模写</title>
   </head>
   <body>
-    <header class="container">
-      <h1><a href="#"><img class="logo" src="images/logo.png" alt=""></a></h1>
+    <header>
+      <h1 class="container"><a href="#"><img class="logo" src="images/logo.png" alt=""></a></h1><!--/.container-->
       <nav>
         <ul class="horizontal-list">
           <li class="horizontal-list__item"><a href="#">NEWS</a></li><!--/.horizontal-list__item-->
@@ -20,31 +20,33 @@
           <li class="horizontal-list__item" ><a href="#">CONTACT</a></li><!--/.horizontal-list__item-->
         </ul><!--/.horizontal-list-->
       </nav>
-    </header><!--/.container-->
-    <section id="pickup">
-      <ul  class="pickup">
-        <li class="pickup__list">
-          <img src="images/pickup1.jpg" alt="">
-          <h2 class="pickup__content">タイトルテキストテキストテキストテキストテキストテキストテキスト</h2><!--/.pickup__content-->
-          <a class="pickup__link">READ MORE</a><!--/.pickup__link-->
-        </li>
-      </ul><!--/.products-->
-      <ul  class="pickup">
-        <li class="pickup__list">
-          <img src="images/pickup2.jpg" alt="">
-          <h2 class="pickup__content">タイトルテキストテキストテキストテキストテキストテキストテキスト</h2><!--/.pickup__content-->
-          <a class="pickup__link">READ MORE</a><!--/.pickup__link-->
-        </li>
-      </ul><!--/.products-->
-      <ul  class="pickup">
-        <li class="pickup__list">
-          <img src="images/pickup3.jpg" alt="">
-          <h2 class="pickup__content">タイトルテキストテキストテキストテキストテキストテキストテキスト</h2><!--/.pickup__content-->
-          <a class="pickup__link">READ MORE</a><!--/.pickup__link-->
-        </li>
-      </ul><!--/.products-->
+    </header>
+    <section id="pickup" class="padding-top">
+      <div class="pickup-wrap">
+        <ul  class="pickup">
+          <li class="pickup__list">
+            <img src="images/pickup1.jpg" alt="">
+            <h2 class="pickup__content">タイトルテキストテキストテキストテキストテキストテキストテキスト</h2><!--/.pickup__content-->
+            <a class="pickup__link">READ MORE</a><!--/.pickup__link-->
+          </li>
+        </ul><!--/.products-->
+        <ul  class="pickup">
+          <li class="pickup__list">
+            <img src="images/pickup2.jpg" alt="">
+            <h2 class="pickup__content">タイトルテキストテキストテキストテキストテキストテキストテキスト</h2><!--/.pickup__content-->
+            <a class="pickup__link">READ MORE</a><!--/.pickup__link-->
+          </li>
+        </ul><!--/.products-->
+        <ul  class="pickup">
+          <li class="pickup__list">
+            <img src="images/pickup3.jpg" alt="">
+            <h2 class="pickup__content">タイトルテキストテキストテキストテキストテキストテキストテキスト</h2><!--/.pickup__content-->
+            <a class="pickup__link">READ MORE</a><!--/.pickup__link-->
+          </li>
+        </ul><!--/.products-->
+      </div><!--/.pickup-wrap-->
     </section><!--/#pickup-->
-    <div class="wrapper container">
+    <div class="main-aside-wrapper container">
       <main>
         <section id="article">
           <ul  class="article">
@@ -131,15 +133,41 @@
           </div><!--/.archive-->
         </section><!--/#archive-->
       </aside>
-    </div><!--/.wrapper-->
-    <footer class="container">
-      <ul class="sns">
-        <li class="sns__instagram">INSTAGRAM</li><!--/.sns__instagram-->
-        <li class="sns__twitter">TWITTER</li><!--/.sns__twitter-->
-        <li class="sns__facebook">FACEBOOK</li><!--/.sns__facebook-->
-      </ul><!--/.sns-->
-      <p>©︎Furniture Design</p>
-    </footer><!--/.container-->
+    </div><!--/.main-aside-wrapper-->
+    <footer>
+      <div class="container">
+        <div class="footer-flexbox">
+          <section id="about">
+            <div class="about">
+              <h2 class="about__title">About</h2><!--/.about__title-->
+              <p class="about__content">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p><!--/.about__title-->
+              <a href="#">▶︎プロフィールの詳細</a>
+              <a href="#">▶︎お仕事の依頼</a>
+              <a href="#">▶︎お問い合わせ</a>
+            </div><!--/.about-->
+          </section><!--/#about-->
+          <section id="menu">
+            <div class="menu">
+              <h2 class="menu__title">Menu</h2><!--/.menu__title-->
+              <ul class="menu__lists">
+                <li class="menu__list">NEW</li><!--/.menu__list-->
+                <li class="menu__list">CATEGORY</li><!--/.menu__list-->
+                <li class="menu__list">COLUMN</li><!--/.menu__list-->
+                <li class="menu__list">SERIES</li><!--/.menu__list-->
+                <li class="menu__list">Q&A</li><!--/.menu__list-->
+              </ul><!--/.menu__lists-->
+            </div><!--/.menu-->
+          </section><!--/#menu-->
+          <section id="twiiter">
+            <div class="twitter">
+              <h2 class="twitter__title">Twitter</h2><!--/.twitter__title-->
+              <a class="twitter-timeline" data-width="350" data-height="315" href="https://twitter.com/TwitterJP?ref_src=twsrc%5Etfw">Tweets by TwitterJP</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div><!--/.twitter-->
+          </section><!--/#twitter-->
+        </div><!--/.footer-flexbox-->
+        <p class="footer">© Travel & Blog</p>
+      </div><!--/.container-->
+    </footer>
     <!-- <script type="text/javascript" src="./js/common.js"></script> -->
   </body>
 </html>
